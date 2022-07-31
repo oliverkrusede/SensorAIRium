@@ -95,7 +95,7 @@ mqttClient.on_message=onMsg
 #connect to Arduino (only if available)
 for p in serial.tools.list_ports.comports():
     print(p.manufacturer)
-    if("Arduino" in p.manufacturer):
+    if(p.manufacturer!=None and "Arduino" in p.manufacturer):
         ard = serial.Serial(port="/dev/"+p.name, baudrate=9600)
         print("Arduino connected!")
         break
