@@ -1,0 +1,10 @@
+[Unit]
+Description=The PureData-Patch for SensorAIRium 
+
+[Service]
+User=pi
+ExecStart=/usr/bin/pd -audiodev 3 -nogui /home/pi/SensorAIRium/PD/sound.pd
+TimeoutSec=60
+
+[Install]
+WantedBy=multi-user.target
