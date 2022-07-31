@@ -1,6 +1,5 @@
 [Unit]
 Description=Connects PureData with data feed and Arduino - SensorAIRium
-PartOf=pd-patch.service
 [Service]
 User=pi
 ExecStart=/usr/bin/python /home/pi/SensorAIRium/adapter.py

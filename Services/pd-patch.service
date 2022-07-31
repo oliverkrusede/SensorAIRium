@@ -1,6 +1,6 @@
 [Unit]
 Description=The PureData-Patch for SensorAIRium 
-
+Requires=pd-adapter.service
 [Service]
 User=pi
 ExecStart=/usr/bin/pd -audiodev 3 -nogui /home/pi/SensorAIRium/PD/sound.pd
